@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "dummyTitle",
+      "author": "Vaibhav"
+    },
+    {
+      "id": "10",
+      "title": "title",
+      "author": "Author",
+      "info": {
+        "email": "info@appium-selenium.com",
+        "phone": "1111111",
+        "address": "India"
+      }
+    },
+    {
+      "id": "100",
+      "title": "title",
+      "author": "author",
+      "info": [
+        {
+          "email": "test email 1",
+          "phone": "test phone 1",
+          "address": "test address 1"
+        },
+        {
+          "email": "test email 2",
+          "phone": "test phone 2",
+          "address": "test address 2"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "updated Title name",
+      "author": "updated Author name"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

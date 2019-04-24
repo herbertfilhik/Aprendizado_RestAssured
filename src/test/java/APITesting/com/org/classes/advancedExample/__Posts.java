@@ -1,11 +1,11 @@
-package APITesting.com.org.classes;
+package APITesting.com.org.classes.advancedExample;
 
-public class _Posts {
+public class __Posts {
 
 	private String id;
 	private String title;
 	private String author;
-	private Info info;
+	private _Info[] info;
 	
 	public String getId() {
 		return id;
@@ -25,16 +25,10 @@ public class _Posts {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	
-	public Info getInfo(){
+	public _Info[] getInfo(){
 		return info;
 	}
-	 
-	public void setInfo(Info info){
+	public void setInfo(_Info[] info){
 		this.info = info;
 	}
-	
-	
-	
-	
 }
