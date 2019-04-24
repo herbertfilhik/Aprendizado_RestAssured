@@ -3,7 +3,7 @@
 <suite name="API Suite" verbose="tests">
 	<test name="Test on rest API">
 		<classes>
-			<class name="" />
+			<class name="APITesting.com.org.api" />
 		</classes>
 	</test>
 </suite>

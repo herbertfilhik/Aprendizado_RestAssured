@@ -1,9 +1,11 @@
 package APITesting.com.org.classes;
 
-public class Posts {
+public class _Posts {
+
 	private String id;
 	private String title;
 	private String author;
+	private Info info;
 	
 	public String getId() {
 		return id;
@@ -22,5 +24,13 @@ public class Posts {
 	}
 	public void setAuthor(String author) {
 		this.author = author;
+	}
+	
+	public Info getInfo(){
+		return info;
+	}
+	 
+	public void setInfo(Info info){
+		this.info = info;
 	}
 }

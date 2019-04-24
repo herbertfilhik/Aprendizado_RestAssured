@@ -4,7 +4,9 @@ import org.testng.annotations.Test;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 
+import APITesting.com.org.classes.Info;
 import APITesting.com.org.classes.Posts;
+import APITesting.com.org.classes._Posts;
 
 import static com.jayway.restassured.RestAssured.*;
 
@@ -96,5 +98,28 @@ public class JasonServerRequests {
 						when().
 						delete("http://localhost:3000/posts/3");
 		System.out.println("Deleting Response: " + resp.asString());	
+	}	
+	
+	@Test(enabled = true)
+	public void test_08() {
+		Info info = new Info();
+		info.setEmail("info@appium-selenium.com");
+		info.setPhone("1111111");
+		info.setAddress("India");
+		
+		_Posts posts = new _Posts();
+		posts.setAuthor("Author");
+		posts.setId("10");
+		posts.setTitle("title");
+		posts.setInfo(info);
+		
+		Response resp = given().
+		when().
+		contentType(ContentType.JSON).
+		body(posts).
+		post("http://localhost:3000/posts");
+		
+		System.out.println("Response : "+ resp.asString());
+		
 	}	
 }
